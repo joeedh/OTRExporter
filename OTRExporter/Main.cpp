@@ -326,7 +326,7 @@ static void ExporterResourceEnd(ZResource* res, BinaryWriter& writer)
 
 static void ExporterProcessCompilable(tinyxml2::XMLElement* reader)
 {
-	std::string nodeName = reader->Name();
+	std::string nodeName = reader->Value();
 }
 
 static void ExporterXMLBegin()

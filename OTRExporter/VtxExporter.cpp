@@ -23,6 +23,7 @@ void OTRExporter_Vtx::SaveArr(ZResource* res, const fs::path& outPath, const std
 
 }
 
+
 void OTRExporter_Vtx::Save(ZResource* res, const fs::path& outPath, BinaryWriter* writer)
 {
 	ZVtx* vtx = (ZVtx*)res;

@@ -71,6 +71,7 @@ class Z64Rom:
 
         # get checkum
         checksum_str = self.rom_data[16:16+4].hex().upper()
+        print(checksum_str, Checksums)
         self.checksum = Checksums(checksum_str) if Checksums.has_value(checksum_str) else Checksums.OOT_UNKNOWN
 
         if self.checksum == Checksums.OOT_UNKNOWN:
